@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title>Sistema de Administracion y control</title>
+  <?php Tag::css('bienvenida') ?>
+  <?php Tag::css('style') ?>
+  <?php Tag::css('exception') ?>
+  <?php Tag::css('estilo') ?>
+  <?php Tag::css('efectos')?>
+  <?php echo Html::includeCss() ?>
+</head>
+<body>
+    <div id='contenedor'>
+        <?php View::content(); ?>
+        
+        <?php View::partial('footer') ?>
+    </div>
+</body>
+</html>

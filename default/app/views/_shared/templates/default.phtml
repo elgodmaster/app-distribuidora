@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title>Sistema de Administracion y control</title>
+  <?php echo stylesheet_link_tag('bienvenida') ?>
+  <?php echo stylesheet_link_tag('style') ?>
+  <?php echo stylesheet_link_tag('exception') ?>
+  <?php echo stylesheet_link_tag('bootstrap-1.2.0') ?>
+  <?php echo stylesheet_link_tags(); ?>
+</head>
+<body style="padding-top:40px;">
+
+	<?php View::partial('menu_superior2');?>
+    <?php View::partial('cuadroInfo');?>
+	<div class='container-fluid'>
+	
+    	<div class='content'>
+    		<?php View::content(); ?>
+    	</div>
+       <div class="sidebar">
+       		<?php /*Mostramos el menu solo si en el controlador se determina un menu */?>
+    		<?php if (isset($mostrarMenu)) View::partial("menu_costado/".$mostrarMenu."");?>
+    	</div>
+       
+    </div>
+    <footer>
+        	<?php View::partial('footer');?>
+		</footer>
+</body>
+</html>

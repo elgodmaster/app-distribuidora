@@ -1,0 +1,19 @@
+<h1>Bienvenido</h1>
+<?php View::content(); ?>
+<?php echo form_tag("usuario/login") ?>
+<table>
+	<tr>
+		<td>Usuario: </td>
+		<td><?php echo text_field_tag("login") ?></td>
+	</tr>
+	<tr>
+    	<td>Contrase&nacute;a:</td>
+    	<td><?php echo password_field_tag("password")?></td>
+    </tr>
+    <tr>
+    	<td>ID Empresa:</td>
+    	<td><?php echo text_field_tag("id_empresa")?></td>
+   	</tr>
+	</table>
+<?php echo submit_tag("Ingresar", 'class: btn orange') ?>
+<?php echo end_form_tag() ?>

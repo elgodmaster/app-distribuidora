@@ -1,0 +1,16 @@
+/* 	CSS Document 
+	Jimmy Miller M.
+	appDistribuidora / Bodega
+*/
+
+/* Cuerpo */
+body{
+	background-color:#D8E6FC;
+}
+#contenedor{
+	width:1000px;
+	margin:auto auto;
+	padding: 5px 5px 5px 5px;
+	
+	background-color:#FFFFFF;
+}
