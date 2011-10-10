@@ -1,0 +1,32 @@
+<h1>Gracias por confiar en nosotros</h1>
+<h3>Para poder tomar contacto con Su empresa, Solicitamos ingresar los siguientes datos:</h3>
+
+<?php echo form_tag("usuario/registro") ?>
+		<table>
+		<tr>
+    		<td>Nombre Contacto: </td>
+    		<td><?php echo text_field_tag("contacto") ?></td>
+    	</tr>
+    	<tr>
+    		<td>Fono Contacto:</td>
+    		<td><?php echo text_field_tag("telefono")?></td>
+    	</tr>
+    	<tr>
+    		<td>Email:</td>
+    		<td><?php echo text_field_tag("email")?></td>
+   		</tr>
+        <tr>
+    		<td>Rubro:</td>
+    		<td><?php echo text_field_tag("rubro")?></td>
+   		</tr>
+        <tr>
+    		<td>¿Tiene Sitio web?:</td>
+    		<td><?php echo text_field_tag("id_empresa")?></td>
+   		</tr>
+        <tr>
+    		<td>Horario en el cual lo podemos contactar:</td>
+    		<td><?php echo text_field_tag("horario")?></td>
+   		</tr>
+		</table>
+<?php echo submit_tag("Ingresar", 'class: btn primary large') ?>
+<?php echo end_form_tag() ?>
