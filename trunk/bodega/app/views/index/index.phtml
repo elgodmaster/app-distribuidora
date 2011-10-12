@@ -1,0 +1,24 @@
+<h2>Bienvenido</h2>
+
+<div class="ventana login centrado">
+    <div class="titulo">
+        Ingreso al sistema
+    </div>
+    
+    <div class="cuerpo">
+    <?php echo Form::open('usuario/login') ?><br />
+    <?php echo Form::label('Usuario:','usuario')?>
+    <?php echo Form::text('usuario.username','class="span10"')?><br />
+    <?php echo Form::label('Password:','password')?>
+    <?php echo Form::pass('usuario.password','class="span10"')?><br />
+    <?php echo Form::label('ID Empresa:','id_empresa')?>
+    <?php echo Form::text('usuario.id_empresa','class="span10"') ?><br />
+    <?php echo Form::submit('Ingresar','class="button"')?>
+    <?php echo Form::close()?><br />
+    <?php ?>
+    </div>
+    <div class="statusbar">
+    	Version Alfa - User/Pass : henux
+    </div>
+</div>
+<br />

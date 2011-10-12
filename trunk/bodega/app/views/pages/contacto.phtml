@@ -1,0 +1,23 @@
+<h2>Contacto</h2>
+
+<?php echo form_tag("contacto") ?>
+<table>
+	<tr>
+    	<td>Nombre: </td>
+        <td><?php echo text_field_tag("nombre") ?></td>
+    </tr>
+    <tr>
+    	<td>E-mail: </td>
+        <td><?php echo text_field_tag("email") ?></td>
+    </tr>
+    <tr>
+    	<td>Asunto:</td>
+        <td><?php echo text_field_tag("asunto")?></td>
+    </tr>
+    <tr>
+    	<td>Mensaje:</td>
+        <td><?php echo textarea_tag("mensaje","Ingrese su mensaje...","cols: 150", "rows: 5")?></td>
+    </tr>
+</table>
+<?php echo submit_tag("Enviar",'class: btn primary') ?>
+<?php echo end_form_tag() ?>

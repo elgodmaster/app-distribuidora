@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #fdfdfd;
+    font-family: Arial, Helvetica;
+}
+#head {
+    height: 53px;
+    background-color: #CCCC99;
+    background: #D1C2A3 url(../img/default/head.png) no-repeat scroll left;
+}
+#head h1 {
+    font-size: 30px;
+    padding: 10px 8px 15px;
+    margin: 0;
+    float: left;
+    color: #fff;
+}
+#content{
+	width:1000px;
+	margin: auto auto;
+}
+.app {
+    font-size: 30px;
+    margin: 0;
+    color: #8A6F5C;
+}
+.title {
+    font-size: 30px;
+    margin: 0;
+    color: #333333;
+}
+#head #info-app {
+    font-size: 20px;
+    padding: 20px 0px 15px;
+    margin: 0;
+    float: left;
+    color: #fff;
+}
+
+#footer {
+	border-top: 1px solid #999999;
+}
+#footer a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #d1a88b;
+}
+#footer a:hover {
+    color: #F00;
+}
+#footer p{
+    font-size: 14px;
+    color: #d1a88b;
+}
+
+
+#info{
+    background-color: #f8f8f8;
+    margin: 20px 20px 30px 100px;
+    border:1px solid #E5E5E5;
+    padding: 2em;
+    clear: both;
+}
+#info h1 {
+    font-size: 1.5em;
+    color: #333333;
+    margin: 0;
+    text-align: center
+}
+#info h2 {
+    font-size: 1.5em;
+    color: #333333;
+    margin: 0;
+}
+#info p,li {
+    color: #333333;
+    font-size: 15px;
+}
+#info ul{
+    margin-left: 40px;
+}
+.alignright #config {
+    font-size: 20px;
+    margin: 15px 20px;
+    color: #fff;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#conf {
+margin-top: 1em;
+}
+h4 {
+margin-top: 1em;
+}
+h4 span {
+color: #8A6F5C;
+}
+#conf p {
+color: #15428b;
+}
