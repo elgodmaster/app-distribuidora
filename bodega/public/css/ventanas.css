@@ -1,0 +1,50 @@
+/* CSS Document */
+
+/* Formato de Ventana en general */
+.ventana{
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	
+	box-shadow: 3px 3px 6px #000;
+	-webkit-box-shadow: 3px 43x 6px #000;
+	-moz-box-shadow: 3px 3px 6px #000;
+}
+.cuerpo{
+	border-width: 10px;
+	-webkit-border-image: url(../img/imgVentana/cuerpo.png) 0 10 10 10 stretch stretch;
+	-moz-border-image: url(../img/imgVentana/cuerpo.png) 0 10 10 10 stretch stretch;
+	border-top-width:0px;	
+}
+.titulo{
+	text-align:center;
+	color:#FFF;
+	border-width:20px;
+	-webkit-border-image: url(../img/imgVentana/barra_titulo.png) 0 20 0 20 stretch stretch;
+	-moz-border-image: url(../img/imgVentana/barra_titulo.png) 0 20 0 20 stretch stretch;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	
+	
+}
+.statusbar{
+	text-align:center;
+	color:#666;
+	border-width:20px;
+	-webkit-border-image: url(../img/imgVentana/statusbar.png) 0 20 0 20 stretch stretch;
+	-moz-border-image: url(../img/imgVentana/statusbar.png) 0 20 0 20 stretch stretch;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Tamaño */
+.login{
+ width:300px;
+}
+
+/* Posicion */
+
+.centrado{
+	margin: auto auto;
+}

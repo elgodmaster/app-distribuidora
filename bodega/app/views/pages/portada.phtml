@@ -1,0 +1,41 @@
+<div id='logo-kumbia'><?php echo img_tag('default/logoAdminControl.png') ?></div>
+
+<table class="centrado">
+	<tr>
+    	<td><div id='info'>
+
+     	<h1>Eres usuario?</h1>
+     	<h2>Ingresa con tus datos!</h2>
+     	<?php echo form_tag("usuario/login") ?>
+		<table>
+		<tr>
+    		<td>Usuario: </td>
+    		<td><?php echo text_field_tag("user") ?></td>
+    	</tr>
+    	<tr>
+    		<td>Contrase&nacute;a:</td>
+    		<td><?php echo text_field_tag("password")?></td>
+    	</tr>
+    	<tr>
+    		<td>ID Empresa:</td>
+    		<td><?php echo text_field_tag("id_empresa")?></td>
+   		</tr>
+		</table>
+		<?php echo submit_tag("Ingresar", 'class: button square') ?>
+		<?php echo end_form_tag() ?>
+	</div>
+	</td>
+    <td><div id='info'>
+    	<h1>Aun no?</h1>
+    	<h2>Registrate, en solo segundos!</h2>
+        <ul>
+    		<li>Precios BAJOS</li>
+        	<li>Soporte Permanente</li>
+        	<li>Sistema configurable a sus necesidades</li>
+        	<li>Real solucion para la Administracion y Control de su distribuidora/bodega</li>
+        </ul>
+        <?php echo link_to('usuario/registro','Quiero registrarme!','class: button square');?>
+    </tr>
+</table>    
+
+

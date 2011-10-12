@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta http-equiv='Content-type' content='text/html; charset=<?php echo APP_CHARSET ?>' />
+  <title>Gestion y Control</title>
+  <?php Tag::css('bienvenida') ?>
+  <?php Tag::css('style') ?>
+  <?php echo Html::includeCss() ?>
+</head>
+<body>
+    <div id='content'>
+        <div id='head'>
+            <h1 id='logo'>Bienvenidos</h1>
+        </div>
+		
+        <div id="cuerpo">
+        	<?php View::content(); ?>
+        </div>
+        
+        <div id="foot">
+        	<?php View::partial('footer') ?>
+        </div>
+    </div>
+</body>
+</html>
